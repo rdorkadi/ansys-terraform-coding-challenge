@@ -6,7 +6,7 @@ variable "region" {
 variable "cidr_block" {
   description = "The CIDR block for the VPC."
   default     = "10.0.0.0/16"
-  
+
 }
 
 variable "cidr_block_public_subnet_1a" {
@@ -92,6 +92,16 @@ variable "instance_type_private_launch_template" {
 variable "name_private_asg" {
   description = "The name of the private ASG."
   default     = "private-asg"
+}
+
+variable "name_public_lb_sg" {
+  description = "The name of the security group for the public load balancer."
+  default     = "public-lb-sg"
+}
+
+variable "name_public_loadbalancer" {
+  description = "The name of the public load balancer."
+  default     = "public-loadbalancer"
 }
 
 
