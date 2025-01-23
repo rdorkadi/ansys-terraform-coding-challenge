@@ -24,17 +24,33 @@ variable "cidr_block_public_subnet_1c" {
   default     = "10.0.3.0/24"
 }
 
-variable "availability_zone_public_subnet_1a" {
+variable "availability_zone_1a" {
   description = "The availability zone for the public subnet in availability zone 1a."
   default     = "us-east-1a"
 }
 
-variable "availability_zone_public_subnet_1b" {
+variable "availability_zone_1b" {
   description = "The availability zone for the public subnet in availability zone 1b."
   default     = "us-east-1b"
 }
 
-variable "availability_zone_public_subnet_1c" {
+variable "availability_zone_1c" {
   description = "The availability zone for the public subnet in availability zone 1c."
   default     = "us-east-1c"
 }
+
+variable "cidr_block_private_subnet_1a" {
+  description = "The CIDR block for the private subnet in availability zone 1a."
+  default     = "10.0.4.0/24"
+}
+
+variable "cidr_block_private_subnet_1b" {
+  description = "The CIDR block for the private subnet in availability zone 1b."
+  default     = "10.0.5.0/24"
+}
+
+variable "cidr_block_private_subnet_1c" {
+  description = "The CIDR block for the private subnet in availability zone 1c."
+  default     = "10.0.6.0/24"
+}
+
