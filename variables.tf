@@ -54,3 +54,24 @@ variable "cidr_block_private_subnet_1c" {
   default     = "10.0.6.0/24"
 }
 
+variable "name_public_launch_template" {
+  description = "The name of the launch template."
+  default     = "public-launch-template"
+}
+
+variable "image_id_public_launch_template" {
+  description = "The ID of the AMI."
+  default     = "ami-0df8c184d5f6ae949"
+}
+
+variable "instance_type_public_launch_template" {
+  description = "The instance type for the launch template."
+  default     = "t2.medium"
+}
+
+variable "name_public_asg" {
+  description = "The name of the public ASG."
+  default     = "public-asg"
+}
+
+
