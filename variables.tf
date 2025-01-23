@@ -74,4 +74,24 @@ variable "name_public_asg" {
   default     = "public-asg"
 }
 
+variable "name_private_launch_template" {
+  description = "The name of the launch template."
+  default     = "private-launch-template"
+}
+
+variable "image_id_private_launch_template" {
+  description = "The ID of the AMI."
+  default     = "ami-0df8c184d5f6ae949"
+}
+
+variable "instance_type_private_launch_template" {
+  description = "The instance type for the launch template."
+  default     = "t2.micro"
+}
+
+variable "name_private_asg" {
+  description = "The name of the private ASG."
+  default     = "private-asg"
+}
+
 
