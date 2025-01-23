@@ -104,4 +104,14 @@ variable "name_public_loadbalancer" {
   default     = "public-loadbalancer"
 }
 
+variable "name_private_loadbalancer" {
+  description = "The name of the private load balancer."
+  default     = "private-loadbalancer"
+}
+
+variable "private_lb_sg" {
+  description = "The name of the security group for the private load balancer."
+  default     = "private-lb-sg"
+}
+
 
