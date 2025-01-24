@@ -114,4 +114,9 @@ variable "private_lb_sg" {
   default     = "private-lb-sg"
 }
 
+variable "sg_private_asg" {
+    description = "The name of the security group for the private ASG."
+    default     = "private-asg-sg"
+}
+
 
