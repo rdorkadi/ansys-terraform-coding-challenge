@@ -34,6 +34,8 @@ Create a Virtual Private Cloud (VPC) with both public and private subnets across
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/rdorkadi/ansys-terraform-coding-challenge.git
+   
+   cd ansys-terraform-coding-challenge
    ```
 
 2. **Configure AWS**:
