@@ -119,4 +119,8 @@ variable "sg_private_asg" {
     default     = "private-asg-sg"
 }
 
+variable "Environment" {
+    description = "The environment in which the resources will be created."
+    default     = "ansys-coding" 
+}
 

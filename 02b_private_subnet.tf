@@ -5,7 +5,7 @@ resource "aws_subnet" "private_subnet_1a" {
 
   tags = {
     Name        = "ansys-private-subnet-1a"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_subnet" "private_subnet_1b" {
 
   tags = {
     Name        = "ansys-private-subnet-1b"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -27,7 +27,7 @@ resource "aws_subnet" "private_subnet_1c" {
 
   tags = {
     Name        = "ansys-private-subnet-1c"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 

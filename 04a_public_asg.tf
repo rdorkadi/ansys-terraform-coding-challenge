@@ -6,7 +6,7 @@ resource "aws_launch_template" "public_launch_template" {
 
   tags = {
     Name        = "public-launch-template"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 

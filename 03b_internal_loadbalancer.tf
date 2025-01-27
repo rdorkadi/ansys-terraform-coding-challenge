@@ -7,6 +7,6 @@ resource "aws_lb" "private_loadbalancer" {
 
   tags = {
     Name        = "private-loadbalancer"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }

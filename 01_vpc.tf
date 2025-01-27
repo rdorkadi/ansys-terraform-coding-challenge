@@ -2,7 +2,7 @@ resource "aws_vpc" "ansys_vpc" {
   cidr_block = var.cidr_block
   tags = {
     Name        = "ansys-vpc"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -11,7 +11,7 @@ resource "aws_internet_gateway" "internet_gateway" {
 
   tags = {
     Name        = "ansys-internet-gateway"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 
   depends_on = [aws_vpc.ansys_vpc]
@@ -22,7 +22,7 @@ resource "aws_route_table" "public_route_table" {
 
   tags = {
     Name = "ansys-public-route-table"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 

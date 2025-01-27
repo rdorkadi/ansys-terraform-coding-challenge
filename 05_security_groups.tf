@@ -5,7 +5,7 @@ resource "aws_security_group" "public_lb_sg" {
 
   tags = {
     Name        = "public-lb-sg"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -18,7 +18,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_http" {
 
   tags = {
     Name        = "allow-http"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -29,7 +29,7 @@ resource "aws_vpc_security_group_egress_rule" "allow_all" {
 
   tags = {
     Name        = "allow-all"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -40,7 +40,7 @@ resource "aws_security_group" "private_lb_sg" {
 
   tags = {
     Name        = "private-lb-sg"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -53,7 +53,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_public_asg_sg" {
 
   tags = {
     Name        = "allow-http"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -64,7 +64,7 @@ resource "aws_vpc_security_group_egress_rule" "internal_lb_allow_all" {
 
   tags = {
     Name        = "allow-all"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -74,7 +74,7 @@ resource "aws_security_group" "sg_public_asg" {
   vpc_id      = aws_vpc.ansys_vpc.id
   tags = {
     Name        = "public-asg-sg"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -87,7 +87,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_public_lb" {
 
   tags = {
     Name        = "allow-public-lb"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -98,7 +98,7 @@ resource "aws_vpc_security_group_egress_rule" "public_allow_all" {
 
   tags = {
     Name        = "allow-all"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -108,7 +108,7 @@ resource "aws_security_group" "sg_private_asg" {
   vpc_id      = aws_vpc.ansys_vpc.id
   tags = {
     Name        = "private-asg-sg"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -121,7 +121,7 @@ resource "aws_vpc_security_group_ingress_rule" "allow_private_lb" {
 
   tags = {
     Name        = "allow-private-lb"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
@@ -132,7 +132,7 @@ resource "aws_vpc_security_group_egress_rule" "private_allow_all" {
 
   tags = {
     Name        = "allow-all"
-    Environment = "ansys-coding"
+    Environment = var.Environment
   }
 }
 
