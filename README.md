@@ -26,6 +26,8 @@ Create a Virtual Private Cloud (VPC) with both public and private subnets across
 - **terraform**
 - **aws-cli**
 
+![Architecture Diagram](Ansys_Coding_Challenge.png)
+
 ## **How to Use**
 
 1. **Clone the Repository**:
